@@ -1,0 +1,26 @@
+{
+  "name": "play-with-charts",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".mongorc.js",
+  "dependencies": {
+    "auth0": "^2.9.1",
+    "auth0-js": "^9.3.2",
+    "highcharts": "^6.1.0",
+    "next": "^6.0.1",
+    "react": "^16.3.2",
+    "react-d3-basic": "^1.6.11",
+    "react-dom": "^16.3.2",
+    "react-jsx-highcharts": "^2.2.1",
+    "react-nvd3": "^0.5.7",
+    "react-vis": "^1.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next src",
+    "build": "next build src",
+    "start": "next start src"
+  },
+  "author": "",
+  "license": "ISC"
+}
