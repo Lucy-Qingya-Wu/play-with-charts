@@ -3,10 +3,20 @@ import Chart from '../components/Chart';
 import React, {Component} from 'react';
 import NVD3Chart from 'react-nvd3';
 import BarAndPieChart from '../components/BarAndPieChart';
+import NivoResponsiveBar from '../components/NivoResponsiveBar';
+import RechartsSimpleLineChart from '../components/RechartsSimpleLineChart';
+import RechartsSimpleBarChart from '../components/RechartsSimpleBarChart';
+import RechartsCustomActiveShapePieChart from '../components/RechartsCustomActiveShapePieChart';
+import ReactChartJS2Doughnut from "../components/ReactChartJS2Doughnut";
+import ReactChartJS2HorizontalBar from "../components/ReactChartJS2HorizontalBar";
+import VictoryHorizontalBarChart from '../components/VictoryHorizontalBarChart'
+import VictoryPieChart from '../components/VictoryPieChart'
 
 const API_URL = "https://nataliia-radina.github.io/react-vis-example/";
 
 class About extends Component{
+
+
     constructor(props){
         super(props)
         this.state = {
@@ -78,10 +88,38 @@ class About extends Component{
         return (
             <Layout>
                 <p>Welcome to about page</p>
-                <Chart data={results}/>
-                <BarAndPieChart />
+   
+
+                <h1>------------------- Recharts -------------------</h1>
+                <div style={{"width":"50%"}}>
+                    <RechartsSimpleBarChart />
+                    <RechartsCustomActiveShapePieChart />
+                    <br />
+                </div>
+
+                <h1>------------------- React ChartJS 2 -------------------</h1>
+                <div style={{"width":"50%"}}>
+                    <ReactChartJS2Doughnut />
+                    <ReactChartJS2HorizontalBar />
+                    <br/>
+                </div>
+
+                <h1>------------------- Victory -------------------</h1>
+                <div style={{"width":"40%"}}>
+                    
+                    <VictoryHorizontalBarChart />
+                    <VictoryPieChart />
+                    <br/>
+                </div>
+               
+                <h1>------------------- React JSX Highcharts -------------------</h1>
+                <div style={{"width":"70%"}}>                 
+                    <BarAndPieChart />
+                    <br/>
+                </div>
 
             </Layout>
+
         )
     }
 }

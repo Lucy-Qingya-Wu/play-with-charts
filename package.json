@@ -4,16 +4,22 @@
   "description": "",
   "main": ".mongorc.js",
   "dependencies": {
+    "@nivo/bar": "^0.33.0",
     "auth0": "^2.9.1",
     "auth0-js": "^9.3.2",
+    "chart.js": "^2.7.2",
     "highcharts": "^6.1.0",
+    "lodash-es": "^4.17.10",
     "next": "^6.0.1",
     "react": "^16.3.2",
+    "react-chartjs-2": "^2.7.2",
     "react-d3-basic": "^1.6.11",
     "react-dom": "^16.3.2",
     "react-jsx-highcharts": "^2.2.1",
     "react-nvd3": "^0.5.7",
-    "react-vis": "^1.9.3"
+    "react-vis": "^1.9.3",
+    "recharts": "^1.0.0-beta.10",
+    "victory": "^0.26.0"
   },
   "devDependencies": {},
   "scripts": {
