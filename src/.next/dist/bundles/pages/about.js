@@ -441,239 +441,60 @@ var Navbar = function Navbar() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nivo_bar__ = __webpack_require__("@nivo/bar");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nivo_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__nivo_bar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nivo_bar__ = __webpack_require__("@nivo/bar");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nivo_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__nivo_bar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nivo_generators__ = __webpack_require__("@nivo/generators");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nivo_generators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__nivo_generators__);
 var _jsxFileName = "/Users/lucywu/play-with-charts/src/components/NivoResponsiveBar.js";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
+var colors = ['#fae04d', '#ff744c', '#789792', '#b1646a', '#efa9a1', '#8470c7', '#97a66f'];
 
-
-var NivoResponsiveBar =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(NivoResponsiveBar, _Component);
-
-  function NivoResponsiveBar(props) {
-    var _this;
-
-    _classCallCheck(this, NivoResponsiveBar);
-
-    _this = _possibleConstructorReturn(this, (NivoResponsiveBar.__proto__ || Object.getPrototypeOf(NivoResponsiveBar)).call(this, props));
-    _this.state = {
-      data: [{
-        "country": "AD",
-        "hot dog": 128,
-        "hot dogColor": "hsl(84, 70%, 50%)",
-        "burger": 62,
-        "burgerColor": "hsl(52, 70%, 50%)",
-        "sandwich": 10,
-        "sandwichColor": "hsl(161, 70%, 50%)",
-        "kebab": 192,
-        "kebabColor": "hsl(69, 70%, 50%)",
-        "fries": 22,
-        "friesColor": "hsl(32, 70%, 50%)",
-        "donut": 19,
-        "donutColor": "hsl(224, 70%, 50%)"
-      }, {
-        "country": "AE",
-        "hot dog": 165,
-        "hot dogColor": "hsl(346, 70%, 50%)",
-        "burger": 133,
-        "burgerColor": "hsl(45, 70%, 50%)",
-        "sandwich": 187,
-        "sandwichColor": "hsl(347, 70%, 50%)",
-        "kebab": 134,
-        "kebabColor": "hsl(87, 70%, 50%)",
-        "fries": 77,
-        "friesColor": "hsl(133, 70%, 50%)",
-        "donut": 143,
-        "donutColor": "hsl(56, 70%, 50%)"
-      }, {
-        "country": "AF",
-        "hot dog": 73,
-        "hot dogColor": "hsl(90, 70%, 50%)",
-        "burger": 173,
-        "burgerColor": "hsl(111, 70%, 50%)",
-        "sandwich": 141,
-        "sandwichColor": "hsl(351, 70%, 50%)",
-        "kebab": 14,
-        "kebabColor": "hsl(302, 70%, 50%)",
-        "fries": 21,
-        "friesColor": "hsl(34, 70%, 50%)",
-        "donut": 162,
-        "donutColor": "hsl(62, 70%, 50%)"
-      }, {
-        "country": "AG",
-        "hot dog": 97,
-        "hot dogColor": "hsl(19, 70%, 50%)",
-        "burger": 106,
-        "burgerColor": "hsl(40, 70%, 50%)",
-        "sandwich": 69,
-        "sandwichColor": "hsl(301, 70%, 50%)",
-        "kebab": 120,
-        "kebabColor": "hsl(106, 70%, 50%)",
-        "fries": 166,
-        "friesColor": "hsl(187, 70%, 50%)",
-        "donut": 170,
-        "donutColor": "hsl(198, 70%, 50%)"
-      }, {
-        "country": "AI",
-        "hot dog": 0,
-        "hot dogColor": "hsl(68, 70%, 50%)",
-        "burger": 141,
-        "burgerColor": "hsl(130, 70%, 50%)",
-        "sandwich": 82,
-        "sandwichColor": "hsl(231, 70%, 50%)",
-        "kebab": 143,
-        "kebabColor": "hsl(153, 70%, 50%)",
-        "fries": 93,
-        "friesColor": "hsl(205, 70%, 50%)",
-        "donut": 96,
-        "donutColor": "hsl(129, 70%, 50%)"
-      }, {
-        "country": "AL",
-        "hot dog": 33,
-        "hot dogColor": "hsl(108, 70%, 50%)",
-        "burger": 78,
-        "burgerColor": "hsl(359, 70%, 50%)",
-        "sandwich": 56,
-        "sandwichColor": "hsl(310, 70%, 50%)",
-        "kebab": 20,
-        "kebabColor": "hsl(216, 70%, 50%)",
-        "fries": 25,
-        "friesColor": "hsl(89, 70%, 50%)",
-        "donut": 146,
-        "donutColor": "hsl(149, 70%, 50%)"
-      }, {
-        "country": "AM",
-        "hot dog": 45,
-        "hot dogColor": "hsl(218, 70%, 50%)",
-        "burger": 174,
-        "burgerColor": "hsl(186, 70%, 50%)",
-        "sandwich": 199,
-        "sandwichColor": "hsl(283, 70%, 50%)",
-        "kebab": 42,
-        "kebabColor": "hsl(188, 70%, 50%)",
-        "fries": 58,
-        "friesColor": "hsl(251, 70%, 50%)",
-        "donut": 193,
-        "donutColor": "hsl(117, 70%, 50%)"
-      }]
-    };
-    return _this;
-  }
-
-  _createClass(NivoResponsiveBar, [{
-    key: "render",
-    value: function render() {
-      console.log("this.state.data: ", this.state.data);
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 119
-        }
-      }, "haha", __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0__nivo_bar__["ResponsiveBar"], {
-        data: this.state.data,
-        keys: ["hot dog", "burger", "sandwich", "kebab", "fries", "donut"],
-        indexBy: "country",
-        margin: {
-          "top": 50,
-          "right": 130,
-          "bottom": 50,
-          "left": 60
-        },
-        padding: 0.3,
-        colors: "nivo",
-        colorBy: "id",
-        defs: [{
-          "id": "dots",
-          "type": "patternDots",
-          "background": "inherit",
-          "color": "#38bcb2",
-          "size": 4,
-          "padding": 1,
-          "stagger": true
-        }, {
-          "id": "lines",
-          "type": "patternLines",
-          "background": "inherit",
-          "color": "#eed312",
-          "rotation": -45,
-          "lineWidth": 6,
-          "spacing": 10
-        }],
-        fill: [{
-          "match": {
-            "id": "fries"
-          },
-          "id": "dots"
-        }, {
-          "match": {
-            "id": "sandwich"
-          },
-          "id": "lines"
-        }],
-        borderColor: "inherit:darker(1.6)",
-        axisBottom: {
-          "orient": "bottom",
-          "tickSize": 5,
-          "tickPadding": 5,
-          "tickRotation": 0,
-          "legend": "country",
-          "legendPosition": "center",
-          "legendOffset": 36
-        },
-        axisLeft: {
-          "orient": "left",
-          "tickSize": 5,
-          "tickPadding": 5,
-          "tickRotation": 0,
-          "legend": "food",
-          "legendPosition": "center",
-          "legendOffset": -40
-        },
-        labelSkipWidth: 12,
-        labelSkipHeight: 12,
-        labelTextColor: "inherit:darker(1.6)",
-        animate: true,
-        motionStiffness: 90,
-        motionDamping: 15,
-        legends: [{
-          "dataFrom": "keys",
-          "anchor": "bottom-right",
-          "direction": "column",
-          "translateX": 120,
-          "itemWidth": 100,
-          "itemHeight": 20,
-          "itemsSpacing": 2,
-          "symbolSize": 20
-        }],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 121
-        }
-      }));
+var NivoResponsiveBar = function NivoResponsiveBar() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
     }
-  }]);
-
-  return NivoResponsiveBar;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__nivo_bar__["ResponsiveBar"], {
+    margin: {
+      top: 1.5,
+      right: 10,
+      bottom: 1.5,
+      left: 1.5
+    },
+    padding: 0.2,
+    data: Object(__WEBPACK_IMPORTED_MODULE_2__nivo_generators__["generateCountriesData"])(['rock', 'jazz', 'hip-hop', 'reggae', 'folk'], {
+      size: 9
+    }),
+    indexBy: "country",
+    enableGridX: false,
+    enableGridY: false,
+    keys: ['rock', 'jazz', 'hip-hop', 'reggae', 'folk'],
+    colors: colors,
+    axisBottom: null,
+    axisLeft: null,
+    borderWidth: 3,
+    borderColor: "#000",
+    enableLabel: true,
+    labelSkipHeight: 24,
+    isInteractive: false,
+    animate: false,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "Title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    }
+  }, "BAR"));
+};
 
 /* unused harmony default export */ var _unused_webpack_default_export = (NivoResponsiveBar);
 
@@ -842,6 +663,232 @@ function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
 
 /* harmony default export */ __webpack_exports__["a"] = (ReactChartJS2HorizontalBar);
+
+/***/ }),
+
+/***/ "./components/ReactVisHorizontalBarChart.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_vis__ = __webpack_require__("react-vis");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_vis___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_vis__);
+var _jsxFileName = "/Users/lucywu/play-with-charts/src/components/ReactVisHorizontalBarChart.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ReactVisHorizontalBarChart =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ReactVisHorizontalBarChart, _Component);
+
+  function ReactVisHorizontalBarChart(props) {
+    var _this;
+
+    _classCallCheck(this, ReactVisHorizontalBarChart);
+
+    _this = _possibleConstructorReturn(this, (ReactVisHorizontalBarChart.__proto__ || Object.getPrototypeOf(ReactVisHorizontalBarChart)).call(this, props));
+    _this.state = {
+      useCanvas: false
+    };
+    return _this;
+  }
+
+  _createClass(ReactVisHorizontalBarChart, [{
+    key: "render",
+    value: function render() {
+      var useCanvas = this.state.useCanvas;
+      var BarSeries = useCanvas ? __WEBPACK_IMPORTED_MODULE_1_react_vis__["HorizontalBarSeriesCanvas"] : __WEBPACK_IMPORTED_MODULE_1_react_vis__["HorizontalBarSeries"];
+      var content = useCanvas ? 'TOGGLE TO SVG' : 'TOGGLE TO CANVAS';
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["XYPlot"], {
+        width: 300,
+        height: 300,
+        stackBy: "x",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["VerticalGridLines"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["HorizontalGridLines"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["XAxis"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["YAxis"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(BarSeries, {
+        data: [{
+          y: 2,
+          x: 10
+        }, {
+          y: 4,
+          x: 5
+        }, {
+          y: 5,
+          x: 15
+        }],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(BarSeries, {
+        data: [{
+          y: 2,
+          x: 12
+        }, {
+          y: 4,
+          x: 2
+        }, {
+          y: 5,
+          x: 11
+        }],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        }
+      })));
+    }
+  }]);
+
+  return ReactVisHorizontalBarChart;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ReactVisHorizontalBarChart);
+
+/***/ }),
+
+/***/ "./components/ReactVisHorizontalPieChart.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_vis__ = __webpack_require__("react-vis");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_vis___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_vis__);
+var _jsxFileName = "/Users/lucywu/play-with-charts/src/components/ReactVisHorizontalPieChart.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ReactVisHorizontalPieChart =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ReactVisHorizontalPieChart, _Component);
+
+  function ReactVisHorizontalPieChart(props) {
+    var _this;
+
+    _classCallCheck(this, ReactVisHorizontalPieChart);
+
+    _this = _possibleConstructorReturn(this, (ReactVisHorizontalPieChart.__proto__ || Object.getPrototypeOf(ReactVisHorizontalPieChart)).call(this, props));
+    _this.state = {
+      value: false
+    };
+    return _this;
+  }
+
+  _createClass(ReactVisHorizontalPieChart, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var value = this.state.value;
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["RadialChart"], {
+        className: 'donut-chart-example',
+        innerRadius: 100,
+        radius: 140,
+        getAngle: function getAngle(d) {
+          return d.theta;
+        },
+        data: [{
+          theta: 2,
+          className: 'custom-class'
+        }, {
+          theta: 6
+        }, {
+          theta: 2
+        }, {
+          theta: 3
+        }, {
+          theta: 1
+        }],
+        onValueMouseOver: function onValueMouseOver(v) {
+          return _this2.setState({
+            value: v
+          });
+        },
+        onSeriesMouseOut: function onSeriesMouseOut(v) {
+          return _this2.setState({
+            value: false
+          });
+        },
+        width: 300,
+        height: 300,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      }, value && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_vis__["Hint"], {
+        value: value,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        }
+      }));
+    }
+  }]);
+
+  return ReactVisHorizontalPieChart;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ReactVisHorizontalPieChart);
 
 /***/ }),
 
@@ -1516,6 +1563,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_ReactChartJS2HorizontalBar__ = __webpack_require__("./components/ReactChartJS2HorizontalBar.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_VictoryHorizontalBarChart__ = __webpack_require__("./components/VictoryHorizontalBarChart.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_VictoryPieChart__ = __webpack_require__("./components/VictoryPieChart.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_ReactVisHorizontalBarChart__ = __webpack_require__("./components/ReactVisHorizontalBarChart.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_ReactVisHorizontalPieChart__ = __webpack_require__("./components/ReactVisHorizontalPieChart.js");
 var _jsxFileName = "/Users/lucywu/play-with-charts/src/pages/about.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1545,7 +1594,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var API_URL = "https://nataliia-radina.github.io/react-vis-example/";
+
+
 
 var About =
 /*#__PURE__*/
@@ -1593,29 +1643,6 @@ function (_Component) {
   }
 
   _createClass(About, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      fetch(API_URL).then(function (res) {
-        if (res.ok) {
-          return res.json();
-        } else {
-          console.log("something went wrong");
-          throw new Error('something went wrong');
-        }
-      }).then(function (res) {
-        // one example: {"name":"JavaScript","year":"2012","quarter":"2","count":"16411"},
-        console.log("here is results aa", res);
-
-        _this2.setState({
-          results: res.results.filter(function (r) {
-            return r.name === 'JavaScript';
-          })
-        });
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
       var _state = this.state,
@@ -1625,17 +1652,17 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0__components_Layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 74
         }
       }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 75
         }
       }, "Welcome to about page"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 78
         }
       }, "------------------- Recharts -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
         style: {
@@ -1643,14 +1670,70 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 79
         }
       }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_RechartsSimpleBarChart__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 80
         }
       }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__components_RechartsCustomActiveShapePieChart__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        }
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        }
+      })), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        }
+      }, "------------------- React ChartJS 2 -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
+        style: {
+          "width": "50%"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__components_ReactChartJS2Doughnut__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87
+        }
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__components_ReactChartJS2HorizontalBar__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
+        }
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89
+        }
+      })), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        }
+      }, "------------------- Victory -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
+        style: {
+          "width": "40%"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__components_VictoryHorizontalBarChart__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95
+        }
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__components_VictoryPieChart__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 96
@@ -1665,23 +1748,18 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 100
         }
-      }, "------------------- React ChartJS 2 -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
+      }, "------------------- React JSX Highcharts -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
         style: {
-          "width": "50%"
+          "width": "70%"
         },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 101
         }
-      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__components_ReactChartJS2Doughnut__["a" /* default */], {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_BarAndPieChart__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
-        }
-      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__components_ReactChartJS2HorizontalBar__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 103
         }
       }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
         __source: {
@@ -1693,51 +1771,23 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 107
         }
-      }, "------------------- Victory -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
-        style: {
-          "width": "40%"
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 108
-        }
-      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__components_VictoryHorizontalBarChart__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 110
-        }
-      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12__components_VictoryPieChart__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 111
-        }
-      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 112
-        }
-      })), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 115
-        }
       }, "------------------- React JSX Highcharts -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
         style: {
           "width": "70%"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 108
         }
-      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_BarAndPieChart__["a" /* default */], {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_13__components_ReactVisHorizontalBarChart__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 109
         }
-      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14__components_ReactVisHorizontalPieChart__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 110
         }
       })));
     }
@@ -1762,6 +1812,13 @@ module.exports = __webpack_require__("./pages/about.js");
 /***/ (function(module, exports) {
 
 module.exports = require("@nivo/bar");
+
+/***/ }),
+
+/***/ "@nivo/generators":
+/***/ (function(module, exports) {
+
+module.exports = require("@nivo/generators");
 
 /***/ }),
 

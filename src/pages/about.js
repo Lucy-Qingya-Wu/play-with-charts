@@ -11,8 +11,11 @@ import ReactChartJS2Doughnut from "../components/ReactChartJS2Doughnut";
 import ReactChartJS2HorizontalBar from "../components/ReactChartJS2HorizontalBar";
 import VictoryHorizontalBarChart from '../components/VictoryHorizontalBarChart'
 import VictoryPieChart from '../components/VictoryPieChart'
+import ReactVisHorizontalBarChart from '../components/ReactVisHorizontalBarChart'
+import ReactVisHorizontalPieChart from '../components/ReactVisHorizontalPieChart'
 
-const API_URL = "https://nataliia-radina.github.io/react-vis-example/";
+
+
 
 class About extends Component{
 
@@ -62,25 +65,7 @@ class About extends Component{
         }
 
     }
-    componentDidMount(){
-        fetch(API_URL)
-        .then(res=>{
-            if (res.ok){
-                return res.json()
-            }
-            else{
-                console.log("something went wrong");
-                throw new Error('something went wrong');
-            }
-        })
-        .then(res=>{
-            // one example: {"name":"JavaScript","year":"2012","quarter":"2","count":"16411"},
-            console.log("here is results aa", res);
-            this.setState({
-                results:res.results.filter(r=>r.name==='JavaScript')
-            })
-        })
-    }
+
     render(){
         const {results, datum} = this.state;
         console.log("here is results bb", results);
@@ -115,8 +100,17 @@ class About extends Component{
                 <h1>------------------- React JSX Highcharts -------------------</h1>
                 <div style={{"width":"70%"}}>                 
                     <BarAndPieChart />
+                    
                     <br/>
                 </div>
+
+                <h1>------------------- React JSX Highcharts -------------------</h1>
+                <div style={{"width":"70%"}}>   
+                    <ReactVisHorizontalBarChart />
+                    <ReactVisHorizontalPieChart />
+                
+                </div>
+
 
             </Layout>
 
