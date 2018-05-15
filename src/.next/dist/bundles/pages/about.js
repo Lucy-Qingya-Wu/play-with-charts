@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1771,7 +1771,7 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 107
         }
-      }, "------------------- React JSX Highcharts -------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
+      }, "------------------- Uber VIS-------------------"), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
         style: {
           "width": "70%"
         },
@@ -1800,7 +1800,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/about.js");

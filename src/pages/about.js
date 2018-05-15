@@ -104,7 +104,7 @@ class About extends Component{
                     <br/>
                 </div>
 
-                <h1>------------------- React JSX Highcharts -------------------</h1>
+                <h1>------------------- Uber VIS-------------------</h1>
                 <div style={{"width":"70%"}}>   
                     <ReactVisHorizontalBarChart />
                     <ReactVisHorizontalPieChart />
